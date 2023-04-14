@@ -5,6 +5,13 @@ module.exports = {
     './src/components/**/*.{js,ts,jsx,tsx}',
     './src/app/**/*.{js,ts,jsx,tsx}',
   ],
+  safelist: [
+    'w-[${percent}%]',
+    {
+      pattern: /w-[${percent}%]/,
+      variants: ['w-[]'],
+    },
+  ],
   theme: {
     extend: {
       backgroundImage: {
@@ -15,4 +22,4 @@ module.exports = {
     },
   },
   plugins: [],
-}
+};
