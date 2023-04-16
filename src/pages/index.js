@@ -1,10 +1,10 @@
 import Image from 'next/image';
 import { Inter } from 'next/font/google';
-import Button from '@/components/linkBtn';
 import Projects from '@/components/projects';
 import Skills from '@/components/skills';
 import { useState } from 'react';
 import Btn from '@/components/btn';
+import Link from 'next/link';
 
 const inter = Inter({ subsets: ['latin'] });
 
@@ -30,7 +30,12 @@ export default function Home() {
             Currently looking for a LIA: week 47 2023 - week 24 2024
           </p>
           <div className='flex md:gap-6 gap-12'>
-            <Button>Contact me</Button>
+            <Link
+              href='/contact'
+              className='p-4 bg-indigo-500 text-indigo-50 hover:bg-indigo-700 rounded-lg'
+            >
+              Contact me
+            </Link>
             <Btn style='secondary' handleClick={() => setShowAbout(true)}>
               Read more
             </Btn>
