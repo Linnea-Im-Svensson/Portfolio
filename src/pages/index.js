@@ -1,12 +1,20 @@
 import Image from 'next/image';
 import { Inter } from 'next/font/google';
-import Button from '@/components/button';
+import Button from '@/components/linkBtn';
 import Projects from '@/components/projects';
 import Skills from '@/components/skills';
+import { useState } from 'react';
+import Btn from '@/components/btn';
 
 const inter = Inter({ subsets: ['latin'] });
 
 export default function Home() {
+  const [showAbout, setShowAbout] = useState(false);
+
+  const handleExit = (e) => {
+    setShowAbout(false);
+  };
+
   return (
     <div className='w-full'>
       <main className='relative flex flex-col-reverse pt-20 pb-6 md:pb-0 md:pt-0 md:flex-row items-center justify-around md:h-[80vh] w-full xl:w-3/4 m-auto'>
@@ -23,20 +31,54 @@ export default function Home() {
           </p>
           <div className='flex md:gap-6 gap-12'>
             <Button>Contact me</Button>
-            <Button style='secondary'>Read more</Button>
+            <Btn style='secondary' handleClick={() => setShowAbout(true)}>
+              Read more
+            </Btn>
           </div>
         </div>
         <Image
           src='/linnea.jpg'
           alt='picture of the author'
           priority={true}
-          width={300}
-          height={300}
-          className='rounded-xl md:h-2/4 md:w-auto'
+          width={700}
+          height={700}
+          className='rounded-xl md:h-2/4 md:w-auto w-80'
         />
       </main>
       <Skills />
       <Projects />
+      <div
+        className={`fixed flex-col items-center gap-6 top-1/2 -translate-y-1/2 left-1/2 -translate-x-1/2 md:p-10 w-fit p-4 dark:bg-black bg-indigo-200 rounded-xl ${
+          showAbout ? 'flex' : 'hidden'
+        }`}
+      >
+        <button
+          className='absolute top-2 right-2 bg-indigo-300 dark:bg-indigo-950  px-4 py-2 rounded-lg'
+          onClick={handleExit}
+        >
+          X
+        </button>
+        <h2 className='text-3xl'>About me</h2>
+        <p>
+          I have mostly worked in retail jobs over the years which allowed me to
+          solve problems in different ways, but I felt like something was
+          missing and decided to look for something new. I discovered
+          programming and fell in love with the way logic and problemsolving
+          went hand in hand.
+        </p>
+        <p>
+          I went to Komvux where I got to dip my toes in this new experience
+          with Java and computer theory. Later i started my 2 year education in
+          Front-end development, mobile & web, where I am currently studying.
+        </p>
+        <a
+          download='Linnea-Svensson-cv'
+          href='/linnea-svensson-cv.pdf'
+          className='p-4 bg-indigo-500 text-indigo-50 hover:bg-indigo-700 rounded-lg'
+        >
+          Download CV
+        </a>
+      </div>
     </div>
   );
 }

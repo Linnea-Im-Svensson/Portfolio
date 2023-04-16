@@ -3,6 +3,7 @@ import { useState } from 'react';
 import { RxHamburgerMenu } from 'react-icons/rx';
 import { SiGithub, SiLinkedin } from 'react-icons/si';
 import MenuListItem from './menuListItem';
+import NormalMenuListItem from './normalMenuListItem';
 
 export default function Navbar() {
   const [showMobileMenu, setShowMobileMenu] = useState(false);
@@ -20,20 +21,21 @@ export default function Navbar() {
         <RxHamburgerMenu />
       </button>
       {showMobileMenu ? (
-        <nav className='fixed items-center justify-between w-full top-0 p-4 bg-indigo-950 bg-opacity-70 z-10'>
+        <nav className='fixed items-center justify-between w-full top-0 p-4 pt-8 bg-indigo-950 bg-opacity-70 z-10'>
           <ul className='flex flex-col gap-4'>
             <MenuListItem closeMenu={closeMenu} to='/'>
               Start
             </MenuListItem>
-            <MenuListItem closeMenu={closeMenu} to='/about'>
-              About
-            </MenuListItem>
             <MenuListItem closeMenu={closeMenu} to='/portfolio'>
               Portfolio
             </MenuListItem>
-            <MenuListItem closeMenu={closeMenu} to='/cv'>
-              CV
-            </MenuListItem>
+            <a
+              download='Linnea-Svensson-cv'
+              href='/linnea-svensson-cv.pdf'
+              className='border-b-2 pb-2'
+            >
+              Download CV
+            </a>
             <MenuListItem closeMenu={closeMenu} to='/contact'>
               Contact
             </MenuListItem>
@@ -45,7 +47,6 @@ export default function Navbar() {
                 >
                   <SiGithub />
                 </Link>
-
                 <Link
                   href='https://www.linkedin.com/in/linn%C3%A9a-svensson-76a45520a/'
                   target='_blank'
@@ -58,31 +59,29 @@ export default function Navbar() {
         </nav>
       ) : (
         <>
-          <nav className='fixed md:flex items-center justify-between w-full top-0 p-4 bg-transparent hidden z-10'>
-            <Link href='/'>Linnéa Svensson</Link>
+          <nav className='fixed md:flex items-center justify-between w-full top-0 p-4 bg-transparent hidden z-10 list-none'>
+            <NormalMenuListItem to='/'>Linnéa Svensson</NormalMenuListItem>
             <div className='flex gap-14'>
               <ul className='flex gap-4'>
-                <li>
-                  <Link href='/'>Start</Link>
-                </li>
-                <li>
-                  <Link href='/about'>About</Link>
-                </li>
-                <li>
-                  <Link href='/portfolio'>Portfolio</Link>
-                </li>
-                <li>
-                  <Link href='/cv'>CV</Link>
-                </li>
-                <li>
-                  <Link href='/contact'>Contact</Link>
-                </li>
+                <NormalMenuListItem to='/'>Start</NormalMenuListItem>
+                <NormalMenuListItem to='/portfolio'>
+                  Portfolio
+                </NormalMenuListItem>
+                <a
+                  download='Linnea-Svensson-cv'
+                  href='/linnea-svensson-cv.pdf'
+                  className='hover:text-indigo-400'
+                >
+                  Download CV
+                </a>
+                <NormalMenuListItem to='/contact'>Contact</NormalMenuListItem>
               </ul>
               <ul className='flex gap-4 text-2xl'>
                 <li>
                   <Link
                     href='https://github.com/ChasAcademy-Linnea-Svensson'
                     target='_blank'
+                    className='hover:text-indigo-400'
                   >
                     <SiGithub />
                   </Link>
@@ -91,6 +90,7 @@ export default function Navbar() {
                   <Link
                     href='https://www.linkedin.com/in/linn%C3%A9a-svensson-76a45520a/'
                     target='_blank'
+                    className='hover:text-indigo-400'
                   >
                     <SiLinkedin />
                   </Link>
