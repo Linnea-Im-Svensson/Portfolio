@@ -34,7 +34,7 @@ export default function ContactForm() {
         Thank you for contacting me!
       </div>
       <form
-        className='flex flex-col gap-6 px-6 py-8 rounded-xl md:w-1/3 w-full h-fit'
+        className='flex flex-col gap-3 px-6 py-8 rounded-xl md:w-2/3 w-full h-fit'
         onSubmit={(e) => (handleSubmit(), e.preventDefault())}
       >
         <h1 className='dark:text-indigo-200 text-3xl font-semibold'>
@@ -69,7 +69,7 @@ export default function ContactForm() {
           <textarea
             id='message'
             required
-            className='dark:bg-transparent border-2 rounded-lg md:h-96 h-60 p-2'
+            className='dark:bg-transparent border-2 rounded-lg md:h-80 h-60 p-2'
             value={formInfo.message}
             onChange={(e) =>
               setFormInfo({ ...formInfo, message: e.target.value })
