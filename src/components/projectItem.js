@@ -28,7 +28,7 @@ export default function ProjectItem({
         className='rounded-t-xl overflow-hidden md:h-[450px] object-cover'
       />
       <div
-        className={`relative flex flex-col justify-between ${cardsBg[cardBg]} rounded-b-xl md:h-60 h-68 gap-6 p-6`}
+        className={`relative flex flex-col justify-between ${cardsBg[cardBg]} rounded-b-xl md:h-2/4 h-68 gap-6 p-6`}
       >
         <p>{title}</p>
         <p>{description}</p>
