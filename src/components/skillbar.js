@@ -5,8 +5,10 @@ export default function Skillbar({ children, percent }) {
     85: 'w-[85%]',
     80: 'w-[80%]',
     75: 'w-[75%]',
+    65: 'w-[65%]',
     40: 'w-[40%]',
     35: 'w-[35%]',
+    30: 'w-[30%]',
   };
 
   return (

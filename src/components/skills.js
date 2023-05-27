@@ -6,6 +6,7 @@ import {
   SiTailwindcss,
   SiNodedotjs,
   SiNextdotjs,
+  SiPrisma,
 } from 'react-icons/si';
 import Skillbar from './skillbar';
 import SectionContainer from './sectionContainer';
@@ -19,8 +20,9 @@ export default function Skills() {
         <SiJavascript className='text-yellow-500' />
         <SiReact className=' text-blue-400 dark:text-blue-300' />
         <SiTailwindcss className=' text-blue-500' />
-        <SiNodedotjs className=' text-green-500' />
         <SiNextdotjs className=' text-black dark:text-white' />
+        <SiNodedotjs className=' text-green-500' />
+        <SiPrisma className=' text-black dark:text-white' />
       </div>
       <div className='flex md:flex-row flex-col px-4 md:justify-center md:gap-60 gap-8 mt-8 w-full md:mt-6'>
         <div className='flex flex-col gap-8 items-center justify-around md:w-80 w-full h-full p-2'>
@@ -41,8 +43,10 @@ export default function Skills() {
           <Skillbar percent='85'>Javascript</Skillbar>
           <Skillbar percent='75'>React</Skillbar>
           <Skillbar percent='85'>Tailwind</Skillbar>
+          <Skillbar percent='65'>Next</Skillbar>
           <Skillbar percent='35'>Node</Skillbar>
-          <Skillbar percent='40'>Next</Skillbar>
+          <Skillbar percent='35'>Prisma</Skillbar>
+          <Skillbar percent='30'>React Native</Skillbar>
         </div>
       </div>
     </SectionContainer>
