@@ -6,6 +6,16 @@ export default function Portfolio() {
     <SectionContainer>
       <div className='grid md:grid-cols-3 grid-cols-1 md:gap-10 gap-6 p-10'>
         <ProjectItem
+          img='/green-circle.png'
+          alt='social networking site with recycling in mind'
+          title='GreenCircle'
+          madeIn='Next/Prisma/Planetscale/Javascript'
+          description='A social networking site with focus on donations and recycling. A group project made in 8 weeks'
+          url='https://github.com/nabilelbajdi/greentech-project-frontend'
+          url2=''
+          cardBg='secondary'
+        />
+        <ProjectItem
           img='/meowmory.png'
           alt='memory game with cats'
           title='Meowmory'

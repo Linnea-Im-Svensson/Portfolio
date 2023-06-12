@@ -11,13 +11,13 @@ export default function Projects() {
     >
       <div className='grid md:grid-cols-3 grid-cols-1 md:gap-14 gap-6 p-10'>
         <ProjectItem
-          img='/meowmory.png'
-          alt='memory game with cats'
-          title='Meowmory'
-          madeIn='Vanilla Javascript'
-          description='Classic memory game with cat pictures, one of the first games I made for a workshop in school.'
-          url='https://github.com/ChasAcademy-Linnea-Svensson/Meowmory'
-          url2='https://meowmory.vercel.app/'
+          img='/green-circle.png'
+          alt='social networking site with recycling in mind'
+          title='GreenCircle'
+          madeIn='Next/Prisma/Planetscale/Javascript'
+          description='A social networking site with focus on donations and recycling. A group project made in 8 weeks. Backend made with Planetscale and Prisma. The website includes features such as Google Maps and more. '
+          url='https://github.com/nabilelbajdi/greentech-project-frontend'
+          url2=''
         />
         <ProjectItem
           img='/hangedmeow.png'
