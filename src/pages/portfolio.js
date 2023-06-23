@@ -13,6 +13,7 @@ export default function Portfolio() {
           description='A tradera/blocket inspired app where users register and then puts up items to sell. The selling user then generates a swish qr code that handles the transaction'
           url='https://github.com/ChasAcademy-Linnea-Svensson/LegacyLoot'
           url2=''
+          cardBg='secondary'
         />
         <ProjectItem
           img='/green-circle.png'
