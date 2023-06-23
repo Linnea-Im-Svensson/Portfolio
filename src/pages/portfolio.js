@@ -6,6 +6,15 @@ export default function Portfolio() {
     <SectionContainer>
       <div className='grid md:grid-cols-3 grid-cols-1 md:gap-10 gap-6 p-10'>
         <ProjectItem
+          img='/legacyloot.jpg'
+          alt='tradera, blocket inspired app'
+          title='LegacyLoot'
+          madeIn='ReactNative/Firebase'
+          description='A tradera/blocket inspired app where users register and then puts up items to sell. The selling user then generates a swish qr code that handles the transaction'
+          url='https://github.com/ChasAcademy-Linnea-Svensson/LegacyLoot'
+          url2=''
+        />
+        <ProjectItem
           img='/green-circle.png'
           alt='social networking site with recycling in mind'
           title='GreenCircle'

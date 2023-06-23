@@ -24,8 +24,8 @@ export default function ProjectItem({
         alt={alt}
         priority={true}
         width={700}
-        height={600}
-        className='rounded-t-xl overflow-hidden md:h-[450px] object-cover'
+        height={650}
+        className='rounded-t-xl overflow-hidden md:h-[350px] object-cover'
       />
       <div
         className={`relative flex flex-col justify-between ${cardsBg[cardBg]} rounded-b-xl md:h-2/4 h-68 gap-6 p-6`}
