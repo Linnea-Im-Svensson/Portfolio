@@ -17,7 +17,7 @@ export default function Home() {
 
   return (
     <div className='w-full'>
-      <main className='relative flex flex-col-reverse pt-20 pb-6 md:pb-0 md:pt-0 md:flex-row items-center justify-around md:h-[80vh] w-full xl:w-3/4 m-auto'>
+      <main className='relative flex flex-col-reverse pt-20 pb-6 md:pb-0 md:pt-0 md:flex-row px-8 items-center justify-around md:h-[80vh] w-full xl:w-3/4 m-auto'>
         <div className='flex-flex-col'></div>
         <div className='flex flex-col md:pt-0 pt-8 h-full md:justify-center justify-start py-4 gap-7 md:items-start items-center px-8 md:p-0 md:w-[70%]'>
           <p className='text-xl md:block hidden'>Linnéa Svensson</p>

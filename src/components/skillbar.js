@@ -9,10 +9,11 @@ export default function Skillbar({ children, percent }) {
     40: 'w-[40%]',
     35: 'w-[35%]',
     30: 'w-[30%]',
+    15: 'w-[15%]',
   };
 
   return (
-    <div className='md:w-[800px] w-[400px]'>
+    <div className='w-full'>
       <div className='pl-2'>{children}</div>
       <div className='relative bg-black bg-opacity-50 w-full h-7 rounded-xl'>
         <div

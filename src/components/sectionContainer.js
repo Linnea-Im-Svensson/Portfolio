@@ -27,7 +27,7 @@ export default function SectionContainer({
   };
   return (
     <section
-      className={`flex flex-col md:gap-8 gap-4 items-center justify-start pt-6 md:pt-12 w-screen h-fit pb-10 ${custom.styles[style]}`}
+      className={`flex flex-col md:gap-8 gap-4 items-center justify-start pt-6 md:pt-12 w-screen h-fit pb-10 flex-wrap ${custom.styles[style]}`}
     >
       <h2
         className={`md:text-4xl text-xl border-b-2 w-full border-opacity-50 md:pb-2 pb-10 ${custom.lines[line]} ${custom.titles[title]} text-center md:font-normal font-semibold md:px-44`}
