@@ -74,7 +74,9 @@ export default function Home() {
         <p>
           I went to Komvux where I got to dip my toes in this new experience
           with Java and computer theory. Later i started my 2 year education in
-          Front-end development, mobile & web, where I am currently studying.
+          Front-end development, mobile & web, where I am currently studying. I
+          work mainly in front-end but i have experience in working with
+          full-stack projects and I'm not afraid to learn both.
         </p>
         <a
           download='Linnea-Svensson-cv'

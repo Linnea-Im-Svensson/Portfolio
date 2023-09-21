@@ -9,6 +9,7 @@ import {
   SiPrisma,
   SiFirebase,
   SiVuedotjs,
+  SiTypescript,
 } from 'react-icons/si';
 import Skillbar from './skillbar';
 import SectionContainer from './sectionContainer';
@@ -27,6 +28,7 @@ export default function Skills() {
         <SiPrisma className=' text-black dark:text-white' />
         <SiFirebase className=' text-orange-400' />
         <SiVuedotjs className=' text-green-600' />
+        <SiTypescript className=' text-blue-600' />
       </div>
       <div className='flex md:flex-row flex-col px-4 md:justify-center md:gap-60 gap-8 mt-8 w-full md:mt-6'>
         <div className='flex md:flex-row flex-col md:gap-8 w-full p-8'>
@@ -36,14 +38,15 @@ export default function Skills() {
             <Skillbar percent='85'>Javascript</Skillbar>
             <Skillbar percent='75'>React</Skillbar>
             <Skillbar percent='85'>Tailwind</Skillbar>
+            <Skillbar percent='65'>Next</Skillbar>
           </div>
           <div className='flex flex-col gap-2 w-full md:pt-0 pt-2'>
-            <Skillbar percent='65'>Next</Skillbar>
             <Skillbar percent='35'>Node</Skillbar>
             <Skillbar percent='40'>Prisma</Skillbar>
             <Skillbar percent='30'>React Native</Skillbar>
             <Skillbar percent='30'>Firebase</Skillbar>
             <Skillbar percent='15'>Vue</Skillbar>
+            <Skillbar percent='30'>Typescript</Skillbar>
           </div>
         </div>
       </div>
