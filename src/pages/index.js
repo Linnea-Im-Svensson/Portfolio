@@ -27,7 +27,6 @@ export default function Home() {
           </p>
           <p className='md:block hidden '>
             Stydying at ChasAcademy in Stockholm <br />
-            Currently looking for a LIA: week 47 2023 - week 24 2024
           </p>
           <div className='flex md:gap-6 gap-12'>
             <Link

@@ -6,6 +6,26 @@ export default function Portfolio() {
     <SectionContainer>
       <div className='grid md:grid-cols-3 grid-cols-1 md:gap-10 gap-6 p-10'>
         <ProjectItem
+          img='/pokemon-tcg.png'
+          alt='Pokemon TCG Collection'
+          title='Pokemon TCG Collection'
+          madeIn='Next/Trpc/Prisma'
+          description='Final course assignment for t3-stack. A card collecting webgame where you play mini-games to earn pokécoins and then buy packs to collect more cards. Trade the once you are missing with other players'
+          url='https://github.com/ChasAcademy-Linnea-Svensson/Pokemon-tcg'
+          url2='pokemon-tcg-theta.vercel.app'
+          cardBg='secondary'
+        />
+        <ProjectItem
+          img='/rebel-runway.png'
+          alt='Rebel Runway Webshop'
+          title='Rebel-Runway'
+          madeIn='Next/Trpc/Prisma'
+          description='A webshop made as a group-project in school'
+          url='https://github.com/ChasAcademy-Linnea-Svensson/RebelRunway'
+          url2='rebel-runway-webshop-git-dev-236030-chasacademy-linnea-svensson.vercel.app'
+          cardBg='secondary'
+        />
+        <ProjectItem
           img='/legacyloot.jpg'
           alt='tradera, blocket inspired app'
           title='LegacyLoot'

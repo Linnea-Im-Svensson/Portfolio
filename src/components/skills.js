@@ -33,20 +33,20 @@ export default function Skills() {
       <div className='flex md:flex-row flex-col px-4 md:justify-center md:gap-60 gap-8 mt-8 w-full md:mt-6'>
         <div className='flex md:flex-row flex-col md:gap-8 w-full p-8'>
           <div className='flex flex-col gap-2 w-full'>
-            <Skillbar percent='90'>HTML</Skillbar>
-            <Skillbar percent='85'>CSS</Skillbar>
-            <Skillbar percent='85'>Javascript</Skillbar>
-            <Skillbar percent='75'>React</Skillbar>
-            <Skillbar percent='85'>Tailwind</Skillbar>
-            <Skillbar percent='65'>Next</Skillbar>
+            <Skillbar width='w-[90%]'>HTML</Skillbar>
+            <Skillbar width='w-[85%]'>CSS</Skillbar>
+            <Skillbar width='w-[85%]'>Javascript</Skillbar>
+            <Skillbar width='w-[75%]'>React</Skillbar>
+            <Skillbar width='w-[85%]'>Tailwind</Skillbar>
+            <Skillbar width='w-[65%]'>Next</Skillbar>
           </div>
           <div className='flex flex-col gap-2 w-full md:pt-0 pt-2'>
-            <Skillbar percent='35'>Node</Skillbar>
-            <Skillbar percent='40'>Prisma</Skillbar>
-            <Skillbar percent='30'>React Native</Skillbar>
-            <Skillbar percent='30'>Firebase</Skillbar>
-            <Skillbar percent='15'>Vue</Skillbar>
-            <Skillbar percent='30'>Typescript</Skillbar>
+            <Skillbar width='w-[35%]'>Node</Skillbar>
+            <Skillbar width='w-[50%]'>Prisma</Skillbar>
+            <Skillbar width='w-[30%]'>React Native</Skillbar>
+            <Skillbar width='w-[30%]'>Firebase</Skillbar>
+            <Skillbar width='w-[15%]'>Vue</Skillbar>
+            <Skillbar width='w-[30%]'>Typescript</Skillbar>
           </div>
         </div>
       </div>
