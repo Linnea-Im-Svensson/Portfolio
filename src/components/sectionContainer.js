@@ -8,21 +8,21 @@ export default function SectionContainer({
   const custom = {
     styles: {
       primary:
-        'bg-gradient-to-b dark:from-black dark:via-indigo-950  dark:to-indigo-800',
+        "bg-gradient-to-b dark:from-black dark:via-indigo-950  dark:to-indigo-800",
       diagonal:
-        'bg-gradient-to-bl dark:from-indigo-800 dark:via-indigo-950  dark:to-purple-950',
+        "bg-gradient-to-bl dark:from-indigo-800 dark:via-indigo-950  dark:to-purple-950",
       reverse:
-        'bg-gradient-to-b dark:from-indigo-800 dark:via-black  dark:to-black',
+        "bg-gradient-to-b dark:from-indigo-800 dark:via-black  dark:to-black",
     },
     lines: {
-      primary: 'border-indigo-800',
-      diagonal: 'border-black',
-      reverse: 'border-black',
+      primary: "border-indigo-800",
+      diagonal: "border-black",
+      reverse: "border-black",
     },
     titles: {
-      center: 'md:text-center',
-      left: 'md:text-left',
-      right: 'md:text-right',
+      center: "md:text-center",
+      left: "md:text-left",
+      right: "md:text-right",
     },
   };
   return (
@@ -40,7 +40,7 @@ export default function SectionContainer({
 }
 
 SectionContainer.defaultProps = {
-  style: 'primary',
-  line: 'primary',
-  title: 'center',
+  style: "primary",
+  line: "primary",
+  title: "center",
 };

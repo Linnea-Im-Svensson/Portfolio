@@ -1,11 +1,11 @@
 // Next.js API route support: https://nextjs.org/docs/api-routes/introduction
-import nodemailer from 'nodemailer';
+import nodemailer from "nodemailer";
 
 const email = process.env.EMAIL;
 const pass = process.env.EMAIL_PASS;
 
 const transporter = nodemailer.createTransport({
-  service: 'gmail',
+  service: "gmail",
   auth: {
     user: email,
     pass,
@@ -18,13 +18,13 @@ const mailOptions = {
 };
 
 export default async function handler(req, res) {
-  if (req.method === 'POST') {
+  if (req.method === "POST") {
     const data = req.body;
 
     try {
       await transporter.sendMail({
         ...mailOptions,
-        subject: 'Portfolio website from: ' + data.email,
+        subject: "Portfolio website from: " + data.email,
         html: `<div><h2>New message</h2><p>${data.message}</p></div>`,
       });
 
@@ -34,5 +34,5 @@ export default async function handler(req, res) {
       return res.status(400).json({ message: error.message });
     }
   }
-  return res.status(400).json({ message: 'Bad request' });
+  return res.status(400).json({ message: "Bad request" });
 }
