@@ -18,7 +18,7 @@ export default function Projects() {
         transition={{ duration: 0.5 }}
         className="flex flex-col items-center justify-center"
       >
-        <div className="grid md:grid-cols-3 grid-cols-1 md:gap-14 gap-6 p-10">
+        <div className="grid lg:grid-cols-3 sm:grid-cols-2 grid-cols-1 md:gap-14 gap-6 p-10 ">
           <ProjectItem
             img="/legacyloot.jpg"
             alt="tradera, blocket inspired app"
@@ -29,12 +29,12 @@ export default function Projects() {
             url2=""
           />
           <ProjectItem
-            img="/green-circle.png"
-            alt="social networking site with recycling in mind"
-            title="GreenCircle"
-            madeIn="Next/Prisma/Planetscale/Javascript"
-            description="A social networking site with focus on donations and recycling. A group project made in 8 weeks. Backend made with Planetscale and Prisma. The website includes features such as Google Maps and more. "
-            url="https://github.com/nabilelbajdi/greentech-project-frontend"
+            img="/wordfiver.jpg"
+            alt="guess the word mobile game"
+            title="WordFiver"
+            madeIn="React Native/Typescript"
+            description="A mobile game where the goal is to guess the correct word. Choose between 4, 5, or 6 letter words. A work in progress."
+            url="https://github.com/ChasAcademy-Linnea-Svensson/WordFiver"
             url2=""
           />
           <ProjectItem
@@ -42,7 +42,7 @@ export default function Projects() {
             alt="blackjack game"
             title="Blackjack"
             madeIn="Vanilla Javascript"
-            description="A blackjack game made for my final assignment in vanilla javascript. Game works better locally for now due to too long picture render time. Please download from github and try it out"
+            description="A blackjack game made for my final assignment in vanilla javascript."
             url="https://github.com/ChasAcademy-Linnea-Svensson/Blackjack-Vanilla-Javascript"
             url2="https://blackjack-vanilla-javascript.vercel.app/"
           />

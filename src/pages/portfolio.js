@@ -6,6 +6,16 @@ export default function Portfolio() {
     <SectionContainer>
       <div className="grid md:grid-cols-3 grid-cols-1 md:gap-10 gap-6 p-10">
         <ProjectItem
+          img="/wordfiver.jpg"
+          alt="guess the word mobile game"
+          title="WordFiver"
+          madeIn="React Native/Typescript"
+          description="A mobile game where the goal is to guess the correct word. Choose between 4, 5, or 6 letter words. A work in progress."
+          url="https://github.com/ChasAcademy-Linnea-Svensson/WordFiver"
+          url2=""
+          cardBg="secondary"
+        />
+        <ProjectItem
           img="/pokemon-tcg.png"
           alt="Pokemon TCG Collection"
           title="Pokemon TCG Collection"
@@ -70,7 +80,7 @@ export default function Portfolio() {
           alt="blackjack game"
           title="Blackjack"
           madeIn="Vanilla Javascript"
-          description="A blackjack game made for my final assignment in vanilla javascript. Game works better locally for now due to too long picture render time. Please download from github and try it out"
+          description="A blackjack game made for my final assignment in vanilla javascript."
           url="https://github.com/ChasAcademy-Linnea-Svensson/Blackjack-Vanilla-Javascript"
           url2="https://blackjack-vanilla-javascript.vercel.app/"
           cardBg="secondary"
