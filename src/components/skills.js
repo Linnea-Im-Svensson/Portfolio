@@ -47,25 +47,20 @@ export default function Skills() {
       </div>
       <div className="flex md:flex-row flex-col px-4 md:justify-center md:gap-60 gap-8 mt-8 w-full md:mt-6">
         <div className="flex md:flex-row flex-col md:gap-8 w-full p-8">
-          <div className="grid grid-cols-2 w-full gap-4">
-            {skillsArr.map((skill, index) => (
+          <div className="grid md:grid-cols-2 grid-cols-1 w-full gap-4">
+            {skillsArr.map((skill) => (
               <Skillbar width={skill.progress}>{skill.name}</Skillbar>
             ))}
           </div>
         </div>
       </div>
-      <div className="flex flex-col gap-8 items-center justify-around md:w-3/4 w-full h-full p-8">
+      {/*     <div className="flex flex-col gap-8 items-center justify-around md:w-3/4 w-full h-full p-8">
         <p>
           I have already gotten familiar with some of the modern programming
           languages/libraries and since I'm a fast learner I will be able to
           learn anything to keep up with your company's standard.
         </p>
-        <p>
-          At school we currently started working with group projects, and
-          because I have always worked with a team in other jobs I am well
-          adapted and ready.
-        </p>
-      </div>
+      </div> */}
     </SectionContainer>
   );
 }
