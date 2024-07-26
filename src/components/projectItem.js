@@ -18,14 +18,14 @@ export default function ProjectItem({
     secondary: "bg-indigo-300 dark:bg-black dark:bg-opacity-50",
   };
   return (
-    <div className="flex flex-col w-full h-full">
+    <div className="flex flex-col w-full h-full" key={title}>
       <Image
         src={img}
         alt={alt}
         priority={true}
         width={700}
         height={650}
-        className="rounded-t-xl overflow-hidden min-h-fit object-cover w-full"
+        className="rounded-t-xl overflow-hidden min-h-fit h-72 object-cover w-full"
       />
       <div
         className={`relative flex flex-col justify-between ${cardsBg[cardBg]} rounded-b-xl md:h-2/4 h-68 gap-6 p-6`}
