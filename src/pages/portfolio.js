@@ -22,7 +22,8 @@ export default function Portfolio() {
           madeIn="Next/Trpc/Prisma"
           description="Final course assignment for t3-stack. A card collecting webgame where you play mini-games to earn pokécoins and then buy packs to collect more cards. Trade the once you are missing with other players"
           url="https://github.com/ChasAcademy-Linnea-Svensson/Pokemon-tcg"
-          url2="https://pokemon-tcg-theta.vercel.app"
+          url2=""
+          //https://pokemon-tcg-theta.vercel.app"
           cardBg="secondary"
         />
         <ProjectItem
@@ -32,7 +33,8 @@ export default function Portfolio() {
           madeIn="Next/Trpc/Prisma"
           description="A webshop made as a group-project in school"
           url="https://github.com/ChasAcademy-Linnea-Svensson/RebelRunway"
-          url2="https://rebel-runway-webshop-git-dev-236030-chasacademy-linnea-svensson.vercel.app"
+          url2=""
+          //https://rebel-runway-webshop-git-dev-236030-chasacademy-linnea-svensson.vercel.app
           cardBg="secondary"
         />
         <ProjectItem
